@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0b0f14;
+  color: #e6e3dc;
+}
+
+a {
+  text-decoration: none;
+  color: #e6e3dc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+:focus-visible {
+  outline: 2px solid #b01319;
+  outline-offset: 2px;
+}

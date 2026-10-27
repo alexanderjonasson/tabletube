@@ -1,0 +1,19 @@
+.error-state {
+  width: min(820px, 100%);
+  margin: 30px auto;
+  padding: 18px 16px;
+  border-radius: 10px;
+  background: rgba(20, 24, 32, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.error-state h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.error-state p {
+  opacity: 0.9;
+  line-height: 1.5;
+}

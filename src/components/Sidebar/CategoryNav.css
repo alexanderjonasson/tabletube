@@ -1,0 +1,115 @@
+.sidebar {
+  background: #121822;
+  width: 15%;
+  height: calc(100vh - 64px);
+  position: fixed;
+  top: 64px;
+  left: 0;
+  padding-left: 2%;
+  padding-top: 20px;
+  overflow-y: hidden;
+}
+
+.shortcut-links img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 18px;
+  width: 100%;
+  cursor: pointer;
+  color: #e6e3dc;
+
+  padding: 6px;
+  border-radius: 6px;
+
+  background: none;
+  border: 0;
+  font: inherit;
+  text-align: left;
+}
+
+.side-link:hover {
+  background: rgba(176, 19, 25, 0.12);
+}
+
+.side-link.active img {
+  border-bottom: 3px solid #b01319;
+}
+
+.side-link span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.about-big-btn {
+  display: block;
+  width: 80%;
+  margin: 22px auto 40px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(230, 227, 220, 0.25);
+  color: #e6e3dc;
+
+  padding: 14px 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.about-big-btn:hover {
+  background: rgba(176, 19, 25, 0.18);
+  border-color: rgba(176, 19, 25, 0.6);
+}
+
+.candle-only {
+  cursor: default;
+}
+
+.candle-only:hover {
+  background: transparent;
+}
+
+.candle-only img {
+  width: 22px;
+  opacity: 0.65;
+  display: block;
+}
+
+/* SUB LIST ICONS */
+.sub-list img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.small-sidebar {
+  width: 5%;
+}
+
+.small-sidebar .side-link span {
+  display: none;
+}
+
+.small-sidebar .about-big-btn,
+.small-sidebar .candle-only {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+}

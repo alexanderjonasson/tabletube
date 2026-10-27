@@ -1,0 +1,222 @@
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px 40px;
+  line-height: 1.65;
+  font-family: "Cinzel", serif;
+}
+
+.about-content {
+  position: relative;
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  padding-bottom: 240px;
+  color: #281b13;
+}
+
+.seal {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: min(1000px, 100%);
+  min-height: 1400px;
+  aspect-ratio: 1000 / 1400;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-inner {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  width: min(660px, 100%);
+  margin: 0 auto;
+  padding: 350px 12px 0;
+}
+
+.about-inner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 325px;
+  right: -25px;
+  bottom: -25px;
+  left: -25px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(245, 226, 192, 0.94) 0%,
+    rgba(245, 226, 192, 0.9) 48%,
+    rgba(245, 226, 192, 0.7) 70%,
+    rgba(245, 226, 192, 0.25) 90%,
+    rgba(245, 226, 192, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.about-content img.feather {
+  position: absolute;
+  top: 240px;
+  right: 80px;
+  width: 170px;
+  height: auto;
+  opacity: 0.7;
+  transform: rotate(-10deg);
+  transform-origin: top right;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.about h1,
+.about h2 {
+  font-family: "Cinzel", Georgia, serif;
+  font-weight: 700;
+  color: #1b1009;
+  text-shadow:
+    0 1px 1px rgba(255, 244, 219, 0.85),
+    0 0 5px rgba(255, 244, 219, 0.45);
+}
+
+.about h1 {
+  margin: 0 0 22px;
+  font-size: 29px;
+  line-height: 1.35;
+  letter-spacing: 0.7px;
+}
+
+.about h2 {
+  margin: 0 0 10px;
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+.about section {
+  margin: 0 0 24px;
+}
+
+.about p {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #24160e;
+  font-family: "Crimson Pro", Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.15px;
+  text-shadow: none;
+  overflow-wrap: break-word;
+}
+
+.about .disclaimer {
+  margin-top: 6px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-content {
+    padding-bottom: 300px;
+  }
+
+  .seal {
+    top: -20px;
+    min-height: 170vh;
+    aspect-ratio: auto;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .about-inner {
+    width: min(520px, 100%);
+    padding: 420px 14px 0;
+  }
+
+  .about-inner::before {
+    top: 395px;
+    right: -15px;
+    bottom: -30px;
+    left: -15px;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about h2 {
+    font-size: 18px;
+  }
+
+  .about p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .about-content img.feather {
+    top: 110px;
+    right: 16px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-content {
+    padding-bottom: 280px;
+  }
+
+  .seal {
+    min-height: 255vh;
+  }
+
+  .about-inner {
+    width: 100%;
+    padding: 460px 22px 0;
+  }
+
+  .about-inner::before {
+    top: 435px;
+    right: -8px;
+    bottom: -25px;
+    left: -8px;
+  }
+
+  .about h1 {
+    margin-bottom: 18px;
+    font-size: 21px;
+  }
+
+  .about h2 {
+    margin-bottom: 8px;
+    font-size: 17px;
+  }
+
+  .about section {
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .about-content img.feather {
+    top: 420px;
+    right: 10%;
+    width: 85px;
+  }
+}

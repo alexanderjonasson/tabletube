@@ -1,0 +1,105 @@
+nav {
+  height: 64px;
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #121822;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu-button {
+  display: flex;
+  margin-right: 25px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-left .menu-icon {
+  width: 22px;
+}
+
+.nav-left .logo {
+  width: 130px;
+}
+
+.nav-middle .search-box {
+  border: 1px solid rgba(230, 227, 220, 0.15);
+  background: #0b0f14;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-middle .search-box input {
+  width: 400px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #e6e3dc;
+}
+
+.nav-middle .search-box input::placeholder {
+  color: rgba(230, 227, 220, 0.6);
+}
+
+.nav-middle .search-box:focus-within {
+  border-color: rgba(230, 227, 220, 0.5);
+}
+
+.nav-middle .search-box button {
+  display: flex;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.nav-middle .search-box img {
+  width: 15px;
+}
+
+.nav-right img {
+  width: 25px;
+  margin-right: 25px;
+}
+
+.nav-right .user-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav-right img {
+    display: none;
+  }
+
+  .nav-right .user-icon {
+    display: block;
+    width: 30px;
+  }
+
+  .nav-middle .search-box input {
+    width: 150px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+}
