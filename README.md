@@ -4,6 +4,8 @@ A themed YouTube client focused on Warhammer and tabletop gaming. The app fetche
 
 By [Alexander Jonasson](https://github.com/alexanderjonasson).
 
+**Live:** [tabletube.vercel.app](https://tabletube.vercel.app)
+
 ## Features
 
 - Home page with videos grouped by category (Home, Gaming, Entertainment, Music, Lore) plus themed categories in the sidebar
